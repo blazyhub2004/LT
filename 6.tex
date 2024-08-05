@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{geometry} 
+
+\begin{document}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{image1.jpg}
+        \caption{Caption for the first image}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{image2.jpg}
+        \caption{Caption for the second image}
+    \end{subfigure}
+    \caption{Overall caption for the figure}
+\end{figure}
+
+\end{document}

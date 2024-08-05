@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\centering
+
+% Define styles for nodes
+\tikzstyle{level 1}=[level distance=4cm, sibling distance=6cm]
+\tikzstyle{level 2}=[level distance=4cm, sibling distance=3cm]
+
+% Begin TikZ picture
+\begin{tikzpicture}[grow=down, sloped]
+    % Root node
+    \node {Root}
+    % First child
+    child {
+        node {Child 1}
+        % Subchild 1
+        child {
+            node {Subchild 1}
+        }
+        % Subchild 2
+        child {
+            node {Subchild 2}
+        }
+    }
+    % Second child
+    child {
+        node {Child 2}
+        % Subchild 1
+        child {
+            node {Subchild 1}
+        }
+        % Subchild 2
+        child {
+            node {Subchild 2}
+        }
+    };
+\end{tikzpicture}
+
+\end{document}
